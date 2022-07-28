@@ -1,0 +1,110 @@
+.navbar {
+    background-color: rgb(57, 134, 227);
+    color: white;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.navbarActions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navbarActions>a {
+    color: inherit;
+    padding: 0.7rem;
+    margin-inline: 0.5rem;
+    text-decoration: none;
+    font-size: large;
+    border: 1px outset blue;
+    border-radius: 20px;
+    box-shadow: 2px 2px rgb(39, 116, 211);
+    letter-spacing: 0.5px;
+    font-weight: 500;
+
+}
+
+
+
+.navbarActions>a:hover {
+    background-color: darkblue;
+    color: aliceblue;
+    position: relative;
+    bottom: 1px;
+    right: 1px;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+.formControl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+.formControl>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    box-shadow: 1px 1px 2px gray;
+}
+
+.formControl>form>input {
+    border: 1px solid rgb(99, 99, 207);
+    padding: 10px;
+    width: 15rem;
+    border-radius: 0.4rem;
+}
+
+.formControl>form>input:focus {
+    outline-color: blue;
+    outline-width: 2px;
+}
+
+.formControl>form>input[type="submit"] {
+    align-self: center;
+    background-color: aliceblue;
+}
+
+.formControl>form>input[type="submit"]:hover {
+    cursor: pointer;
+    border: 2px solid blue;
+}
+
+.formControl>form>span {
+    color: red;
+    max-width: 200px;
+}
+
+.formControl>p {
+    color: red;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+
+.notesContainer {
+    display: flex;
+    margin-inline: 20px;
+}
+
+.notesList {
+    flex-grow: 1;
+    margin-inline: 20px;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+.addNote {
+    flex-grow: 0;
+    margin-inline: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px gray;
+    min-width: 300px;
+}
